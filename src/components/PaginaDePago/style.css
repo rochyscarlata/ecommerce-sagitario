@@ -1,0 +1,29 @@
+.loading{
+    background: url(https://i.pinimg.com/originals/a2/dc/96/a2dc9668f2cf170fe3efeb263128b0e7.gif)  center center fixed;
+    background-repeat: no-repeat;
+    background-color: #1C273A ;
+}
+
+.fondoo{
+    background-color: rgb(189, 18, 18);
+    height: 100vh;
+}
+.card-rech{  
+    background-color: rgb(189, 18, 18);
+}
+.imgrech{
+    height: 200px;
+}
+.cardmadre{
+    border: solid 1px rgb(36, 34, 34);  
+}
+.card-exit{
+    background-color: rgb(28, 160, 28);
+}
+.cardmadreExit{
+    border: solid 1px black;
+}
+.fondooexit{
+    background-color:rgb(28, 160, 28); 
+    height: 100vh;
+}

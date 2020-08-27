@@ -1,0 +1,45 @@
+/* SUFIJOS A ESTA CLASE ES : REG */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+.container_reg{
+ justify-content: center;
+ padding: 15px;
+ border: 0px solid black;
+ width: 330px;
+ height: 350px;
+ position: relative;
+ margin: 6% auto;
+ padding: 5px;
+text-align: start;
+ font-family: 'Muli', serif;
+    
+}
+.btn-env{
+    border:#19ED18 solid 0.7px !important ;
+    background-color: black !important;
+    color: #19ED18 !important;
+    transition: 0.8s !important;
+  }
+  .btn-env:active{
+      transition: ease-in !important;
+      background-color: yellowgreen !important;
+      color: black !important;
+  }
+.container_titulo_reg{
+    justify-content: center;
+    display: flex;
+    color: aliceblue;
+}
+.btn-redes{
+    border-radius: 10px;
+    font-size: inherit !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center !important;
+}
+
+
+  
+  ::ng-deep.swal2-container {
+    z-index: 1000000;
+}

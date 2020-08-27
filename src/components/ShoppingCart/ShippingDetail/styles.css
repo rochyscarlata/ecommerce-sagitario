@@ -1,0 +1,106 @@
+.card-tipo-envio{
+    max-height: 7rem;
+    transition: 0.3s;
+}
+
+.card-tipo-envio:hover{
+    background-color: rgb(216, 215, 215) !important;
+    cursor: pointer;
+}
+
+.card-tipo-envio-seleccionado {
+    max-height: 7rem;
+    background-color: rgb(228, 228, 228) !important;
+}
+
+.input-error {
+    font-size: small;
+}
+
+
+@media (max-width: 1080px) {    
+    .titulo-card-envio {
+        font-size: 1.4rem !important;
+    }
+
+    .card-tipo-envio {
+        min-height: 10rem;
+        max-height: 10rem;
+    }
+
+    .card-tipo-envio-seleccionado{
+        min-height: 10rem;
+        max-height: 10rem;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 991px) {    
+    .titulo-card-envio {
+        font-size: 1rem !important;
+    }
+
+    .card-tipo-envio {
+        min-height: 12rem;
+        max-height: 12rem;
+    }
+
+    .card-tipo-envio-seleccionado{
+        min-height: 12rem;
+        max-height: 12rem;
+    }
+}
+
+@media (max-width: 580px) {    
+    .card-envio-checkbox {
+        display: none !important;
+    }
+
+    .card-tipo-envio {
+        min-height: 8rem;
+        max-height: 8rem;
+    }
+
+    .card-tipo-envio-seleccionado{
+        min-height: 8rem;
+        max-height: 8rem;
+    }
+
+    .titulo-card-envio{
+        font-weight: bold !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (max-width: 404px) {    
+    .titulo-card-envio{
+        font-size: 0.9rem !important;
+    }
+
+    .detalle-card-envio {
+        font-size: 0.9rem !important;
+    }
+   
+}
+
+@media (max-width: 368px) {    
+    .titulo-card-envio{
+        font-size: 0.7rem !important;
+    }
+
+    .detalle-card-envio {
+        font-size: 0.6rem !important;
+    }
+
+    .card-tipo-envio {
+        min-height: 6rem;
+        max-height: 50rem;
+    }
+
+    .card-tipo-envio-seleccionado{
+        min-height: 6rem;
+        max-height: 50rem;
+    }
+   
+}

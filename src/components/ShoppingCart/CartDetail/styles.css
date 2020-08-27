@@ -1,0 +1,79 @@
+.product-card {
+    transition: 0.3s;
+    background-color: white;
+    box-shadow: -3px 3px 5px 0px rgba(207, 207, 207, 0.75);
+}
+
+.imagen-card {
+    max-width: 11rem !important;
+}
+
+.product-card:hover{
+    background-color: rgb(238, 237, 237);
+    box-shadow: -3px 3px 5px 0px rgba(207, 207, 207, 0.75);
+}
+
+.scrollable {
+    max-height: 35em;
+    overflow-y: scroll;
+}
+
+.close {
+    transition: 0.3s !important;
+}
+
+.close:hover {
+    background-color: rgb(207, 207, 207) !important;
+}
+
+.trash-icono{
+    width: 18px;
+    color: rgb(160, 17, 17) !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.btn-cargando {
+    min-width: 9rem !important;
+    max-height: 2.4rem !important;
+}
+
+.titulo-cupon { 
+    font-size: 2rem;
+}
+
+.btn-irTienda {
+    font-weight: bolder !important;
+}
+
+.input-cupon {
+    font-size: 1.5rem !important;
+    font-weight: bolder !important;
+}
+
+.input-cupon::placeholder {
+    color: rgb(206, 206, 206) !important;
+}
+
+
+@media (max-width: 1080px) {
+    .titulo-cupon { 
+        
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .producto-descripcion {
+        background-color: rgb(228, 228, 228) !important;
+    }
+    
+    .titulo-cupon { 
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,188 @@
+.containerTurn {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: black;
+}
+.btnForm {
+  color: whitesmoke !important;
+  background-color: #212122 !important;
+  border: 3px groove #353434 !important;
+  border-radius: 6px !important;
+  outline: none !important;
+  box-shadow: 0px 0px 6px 0px #232323 !important;
+}
+
+.btnForm:active{
+  background-color: #454545 !important;
+  
+}
+.btnFormCancel{
+  background-color: #f12121 ;
+  border: 3px groove #f02323 ;
+  border-radius: 6px ;
+  outline: 0 !important;
+  box-shadow: 0px 0px 6px 0px #232323 ;
+}
+.btnFormCancel:active{
+  background-color: rgb(235, 76, 76) ;
+}
+.tilteList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.containerTurn h2 {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.containerForm {
+  background: #212121;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24vw;
+  padding: 15px;
+  border: 1px groove #303030;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 2px #201e1e;
+  margin-bottom: 5vh;
+  
+}
+.containerForm select {
+  text-decoration: none;
+  border: none;
+  border-style: none;
+  border-collapse: none;
+  background-color: #303030;
+  border-bottom: 0.1px solid yellowgreen;
+  margin-bottom: 10px;
+  width: 20vw;
+  color: whitesmoke;
+  outline: none;
+  color: #888888;
+  text-align: center;
+}
+.containerForm input {
+  background-color: #303030;
+  border: 0.5px solid #212121;
+  border-radius: 3px;
+  width: 20vw;
+  margin-bottom: 10px;
+  outline: none;
+  color: #888888;
+  border-bottom: 0.1px solid yellowgreen;
+}
+.containerForm textarea {
+  background-color: #303030;
+  border: 0.5px solid #212121;
+  border-radius: 3px;
+  width: 20vw;
+  margin-bottom: 10px;
+  color: #888888;
+  outline: none;
+  border-bottom: 0.1px solid yellowgreen;
+}
+input[type="submit"] {
+  background: rgb(141, 196, 32);
+  border: none;
+  border-radius: 4px;
+  color: #212122;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  background-color: green;
+}
+
+label {
+  font-size: 13px;
+  width: 20vw;
+  text-align: start;
+  color: yellowgreen;
+}
+.modalInfoTurno{
+  background-color: #121212;
+  color:yellowgreen ;
+}
+.modal-content{
+border:1px solid yellowgreen !important;
+}
+
+@media (max-width: 576px) {
+  
+  .containerForm {
+    width: 80vw;
+  }
+  .containerForm select {
+      width: 70vw;
+      height: 5vh;
+  }
+  .containerForm input {
+    width: 70vw;
+    height: 5vh;
+  }
+  label{
+      width: 70vw;
+  }
+  .containerForm textarea {
+      width: 70vw;
+  }
+  .date {
+      width: 70vw !important;
+  }
+}
+
+@media (min-width: 576px) and ( max-width : 768px){
+
+    .containerForm {
+        width: 80vw;
+      }
+      .containerForm select {
+          width: 70vw;
+          height: 5vh;
+      }
+      .containerForm input {
+        width: 70vw;
+        height: 5vh;
+      }
+      label{
+          width: 70vw;
+      }
+      .containerForm textarea {
+          width: 70vw;
+      }
+      .date {
+          width: 70vw !important;
+      }
+}
+@media (min-width: 768px) and ( max-width : 1024px){
+    .containerForm {
+        width: 42vw;
+      }
+      .containerForm select {
+          width: 38vw;
+          height: 5vh;
+      }
+      .containerForm input {
+        width: 38vw;
+        height: 5vh;
+      }
+      label{
+          width: 38vw;
+      }
+      .containerForm textarea {
+          width: 38vw;
+      }
+      .date {
+          width: 38vw !important;
+      }
+}

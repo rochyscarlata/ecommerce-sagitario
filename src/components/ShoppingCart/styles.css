@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.background-checkout {
+    background-color: #424242 !important ;
+}
+
+.shopping-detail-container {
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: whitesmoke;
+    box-shadow: -7px 10px 5px 0px rgba(48, 47, 47, 0.75);
+}
+
+.scrollable {
+    max-height: 30rem;
+    overflow-y: scroll;
+}
+
+.card-descuento {
+    font-size: 1.2rem !important;
+    color: rgb(230, 52, 52);
+    background-color: whitesmoke !important;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    border: 4px dashed #DB5249 !important;
+}
+
+@media (max-width: 575px) {
+    .card-descuento{
+        margin-left: -15px !important;
+    }
+}

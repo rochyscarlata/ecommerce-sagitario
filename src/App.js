@@ -39,21 +39,21 @@ const cargarUserId = (usuario) => {
   
 }
 
-const autenticar = async () => {
-  try {
-    const response = await axiosInstance.get("/private",{ headers: {"Authorization" : `Bearer ${authen}`} })
-    setUsuario(response.data.user)
-    cargarUserId(response.data.user)
+// const autenticar = async () => {
+//   try {
+//     const response = await axiosInstance.get("/private",{ headers: {"Authorization" : `Bearer ${authen}`} })
+//     setUsuario(response.data.user)
+//     cargarUserId(response.data.user)
     
-  } catch (error) {
-    console.log(error)
-  }
+//   } catch (error) {
+//     console.log(error)
+//   }
  
-}
+// }
 
-  useEffect(() => {
-    autenticar()
-  }, [authen])
+//   useEffect(() => {
+//     autenticar()
+//   }, [authen])
   
   return (
     <Router>

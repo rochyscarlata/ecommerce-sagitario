@@ -33,7 +33,7 @@ const Fotter = () => {
                   NUESTRA TIENDA
                 </Link>
               </Col>
-              <Col className="footer-menu-link-container h-100">
+              {/* <Col className="footer-menu-link-container h-100">
                 <a
                   className="footer-menu-list-link h-100 text-justify text-center"
                   href={ubicacion}
@@ -42,7 +42,7 @@ const Fotter = () => {
                 >
                   COMO LLEGAR
                 </a>
-              </Col>
+              </Col> */}
               
              
               <Col className="footer-menu-link-container h-100">
@@ -68,7 +68,7 @@ const Fotter = () => {
                 className="footer-disclaimer text-justify text-center"
               >
                 Sagitario® ● Suipacha 681 ● S.M Tucuman  ● Tucuman ●
-                Argentina ● www.sagitariomarket.com. Todos los derechos
+                Argentina ● www.sagitariomarket.com.● Desarrollado por www.codeandcoffee.com.ar - Todos los derechos
                 reservados.
               </Col>
             </Row>

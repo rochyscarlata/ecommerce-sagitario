@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-  import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Main from "./components/Main/Main";
 import PageService from "./components/PageService/PageService";
@@ -39,36 +39,38 @@ const cargarUserId = (usuario) => {
   
 }
 
-// const autenticar = async () => {
-//   try {
-//     const response = await axiosInstance.get("/private",{ headers: {"Authorization" : `Bearer ${authen}`} })
-//     setUsuario(response.data.user)
-//     cargarUserId(response.data.user)
+const autenticar = async () => {
+  try {
+    const response = await axiosInstance.get("/private",{ headers: {"Authorization" : `Bearer ${authen}`} })
+    setUsuario(response.data.user)
+    cargarUserId(response.data.user)
     
-//   } catch (error) {
-//     console.log(error)
-//   }
+  } catch (error) {
+    console.log(error)
+  }
  
-// }
+}
 
-//   useEffect(() => {
-//     autenticar()
-//   }, [authen])
+  useEffect(() => {
+    autenticar()
+  }, [authen])
   
   return (
     <Router>
       <Switch>
 
-        <Route exact path="/Main">
-          <Main />
+        <Route exact path="/main-test">
+          <MainTest />
         </Route>
 
-        
+        <Route exact path="/">
+          <Login />
+        </Route>
         <Route exact path="/register">
           <Register />
         </Route>
-        <Route exact path="/">
-          <Main/>
+        <Route exact path="/main">
+          <Main authen={authen} setAuthen={setAuthen} usuario={usuario} setCarrito={setCarrito} userId={userId} products={products} setProducts={setProducts}/>
         </Route>
         <Route exact path="/shopping-checkout" render={(props) => <ShoppingCheckout {...props} carrito={carrito} />} />
 

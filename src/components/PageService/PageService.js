@@ -21,10 +21,7 @@ const PageService = () => {
 
       <Form>
       <Form.Group controlId="">
-    <Form.Label>Telefono: </Form.Label>
-   
-   <a href="tel:943 555 999"></a>
-
+    <Button variant="success" url></Button>
     
   </Form.Group>
   <Form.Group controlId="formBasicEmail">

@@ -82,7 +82,7 @@ const HeaderStatic = ({ authen, setAuthen, usuario }) => {
         <Navbar.Brand href="/main" className="">
             <Image fluid src={Loguito} className="logo_imagen_header" />
           </Navbar.Brand>
-          <Navbar.Brand href="#home" className="navbarnuevo" > Sagitario</Navbar.Brand>
+          <Navbar.Brand href="#home" className="navbarnuevo" > Sagitario Minimarket</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav"  />
           <Navbar.Collapse id="basic-navbar-nav" className="navbarnuevo">
             <Nav className="mr-auto">
@@ -105,6 +105,14 @@ const HeaderStatic = ({ authen, setAuthen, usuario }) => {
             </Nav>
            
           </Navbar.Collapse>
+          <Button
+            className="btnLogin_header btnLogin-out mr-3 shadow"
+            onClick={() => {
+              history.push("/");
+            }}
+          >
+            INICIAR SESIÓN
+          </Button>
         </Navbar>
       </Container>
     </Fragment>

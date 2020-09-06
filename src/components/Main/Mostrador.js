@@ -15,7 +15,9 @@ import { FaCartPlus } from "react-icons/fa";
 import axiosInstance from "../util/axiosInstance";
 
 import { CardText } from "react-bootstrap/Card";
+import Example from "./Example"
 import swal from "sweetalert";
+
 
 // const Mostrador = ({ setProducts, products }) => {
 //   //Traer productos de base de datos
@@ -200,7 +202,9 @@ const Mostrador = ({ setProducts, products }) => {
       text: ` $ ${precio}`,
       imageHeight: 300,
       imageAlt: "A tall image",
-    });
+      
+  });
+
  };
 
 const filtrarCategorias = ({productos,categoria}) => {
@@ -229,7 +233,14 @@ const filtrarCategorias = ({productos,categoria}) => {
   };
   return (
     <>
-  
+    <div className="p-5">
+    <h3 className="text-center text-danger"> <strong>CON TU COMPRA MAYOR A $2.500 EL ENVÍO ES GRATIS ! <br></br>
+    PARA CONOCER ZONA y HORARIOS DE ENVÍO,CLICK AQUÍ. !</strong>
+    <br></br>
+    <Example/>
+
+    </h3>
+    </div>
      <p className="titulo_product_main">Productos</p>
     
      <Container fluid className="contenedor-mostrador">
@@ -280,13 +291,13 @@ const filtrarCategorias = ({productos,categoria}) => {
                 <Card key={producto.id}  sm={12} className="cardProduct">
                   <Card.Img
                     variant="top"
-                    src={'https://d26lpennugtm8s.cloudfront.net/stores/230/448/products/jugo-soja-manzana-ades-1lt-d79851472c9a12962715132885433848-640-0.jpg'}
+                    src={producto.imagen[0]}
                     rounded
                     style={{ height: "250px" }}
                   />
                   <Card.Body>
-                    <Card.Title><h5 className="text-dark">gaseosa coca cola</h5></Card.Title>
-                    <Card.Text> <p className="text-dark">$150</p></Card.Text>
+                    <Card.Title className="text-dark">{producto.nombre}</Card.Title>
+            <Card.Text className="text-dark"> {producto.precio}</Card.Text>
                   </Card.Body>
                   <Card.Footer>
                     <Row className="rowroto">

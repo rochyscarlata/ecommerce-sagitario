@@ -21,6 +21,7 @@ import PagoExitoso from "./components/PaginaDePago/PagoExitoso"
 import PagoRechazado from "./components/PaginaDePago/PagoRechazado"
 import PagoPendiente from "./components/PaginaDePago/PagoPendiente"
 
+
 import "./App.css";
 
 

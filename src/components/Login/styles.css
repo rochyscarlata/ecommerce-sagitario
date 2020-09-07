@@ -2,28 +2,29 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 .sidebar-contenedor {
   /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/75/Information-Technology.jpg); */
-  background-image: url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=707&q=80);
+  background-image: url(https://images.unsplash.com/photo-1497005367839-6e852de72767?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=747&q=80);
   height: 400;
   width: 600px;
 }
 .bodylogin {
   height: 100vh;
-  background-color: #171717;
+  background-color: white;
+  color: #060606;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .login-contenedor {
-  background-color: #060606;
+  background-color: white;
   height: 600px !important;
   width: 600px !important;
-  color: lightcyan;
+  color: black;
 }
 .btn-env{
-  border:#19ED18 solid 0.7px !important ;
-  background-color: black !important;
-  color: #19ED18 !important;
+  border:#ed5418 solid 0.7px !important ;
+  background-color: rgb(255, 255, 255) !important;
+  color: #ed5418 !important;
 }
 
 .contenedor-inicio {
@@ -43,14 +44,14 @@
 .toggle {
   text-decoration-style: none;
   border-radius: 20px;
-  background-color: #19ED18 !important;
+  background-color: #ed5418 !important;
   border: none !important;
-  color: white;
+  color: black;
   outline: none !important;
 }
 .toggle:hover {
-  color: white;
-  background-color: #19ED18 !important;
+  color: black;
+  background-color: #ed5418 !important;
   outline: none !important;
 }
 @media (max-width: 664px) {
